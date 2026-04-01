@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Categories</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .category-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #f4f4f4;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .category-button {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .category-button:hover {
+      background-color: #e0e0e0;
+    }
+    .content {
+      padding-top: 70px; /* space for fixed top bar */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="category-bar">
+    <div class="category-button">📚 All Books</div>
+    <div class="category-button">📖 Fiction</div>
+    <div class="category-button">🧠 Self-Help</div>
+    <div class="category-button">🧙‍♂️ Fantasy</div>
+    <div class="category-button">🚀 Sci-Fi</div>
+    <div class="category-button">🕵️ Mystery</div>
+    <div class="category-button">❤️ Romance</div>
+    <div class="category-button">👶 Children</div>
+    <div class="category-button">📜 History</div>
+    <div class="category-button">💼 Business</div>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to the Book Store</h1>
+    <p>Explore books by category using the buttons above.</p>
+    <!-- Add the rest of your page content here -->
+  </div>
+
+</body>
+
+
+
+    <footer>
+        <p>© 2025 BookBuddy. All rights reserved.</p>
+    </footer>
+
+
+    
+</html>

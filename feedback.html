@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Book Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .img{
+  background: url(img.png) no-repeat;
+  height: 100vh;
+  width: 100%;
+  opacity: 60%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+} 
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      color: #666;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    nav{
+  /* position: fixed;   */
+  background: #10355f ;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;  
+}
+.menu .logo a{
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  /* margin-right: 17px; */
+
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+  text-align: justify;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  /* background: rgb(236, 158, 69); */
+  background-size: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: #000 ;
+}
+  </style>
+</head>
+<body>
+   <nav>
+    <div class ="menu">
+      <div class ="logo">
+        <a href="#">📚 BookBuddy</a>
+      </div>
+      <ul>
+        <li><a href="index.html" >Home</a></li> 
+        <li><a href="about.html"class="active">About</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="#">Categories</a></li> -->
+        <li><a href="feedback.html">FeedBack</a></li>
+        <!-- <li><a href="#">🌙Dark Mode</a></li> -->
+
+
+
+      </ul>
+        <!-- <button style="text-align: left;" id="dark-mode-toggle">🌙 Dark Mode</button> -->
+
+
+    </div>
+
+
+  </nav>
+ 
+
+  <header>
+    <h1>📢 Feedback</h1>
+  </header>
+
+  <div class="container">
+    <h2>We'd love to hear from you!</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Your Feedback</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Your Book Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
